@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csit.ramesh.game.result">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:text="GAME OVER !!"
+                    android:textSize="30sp"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_margin="10dp">
+                <TextView
+                android:gravity="center"
+                android:id="@+id/yourScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="150"
+                android:textSize="15sp"
+                android:layout_below="@+id/editText"
+                android:layout_centerHorizontal="true" />
+            </TableRow>
+            <TableRow android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/highScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="20sp"
+                    android:inputType="textPersonName"
+                    android:text="High Score : 500"
+                    android:gravity="center"
+                    android:layout_marginRight="47dp"
+                    android:layout_marginEnd="47dp"
+                    android:layout_below="@+id/yourScore"
+                    android:layout_alignRight="@+id/editText"
+                    android:layout_alignEnd="@+id/editText" />
+
+            </TableRow>
+            <TableRow android:layout_margin="10dp">
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/tryAgain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Try Again"
+                    android:layout_below="@+id/highScore"
+                    android:layout_centerHorizontal="true" />
+
+            </TableRow>
+
+        </TableLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

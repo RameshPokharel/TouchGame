@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csit.ramesh.game.Main2Activity">
+    <RelativeLayout
+
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:gravity="center">
+        <TableLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:src="@drawable/ic_brightness_1_black_24dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="10 point"
+                    android:textSize="18sp"
+                    android:paddingLeft="10sp"/>
+            </TableRow>
+            <TableRow android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:src="@drawable/ic_favorite_black_24dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" 30 point "
+                    android:textSize="18sp"
+                    android:paddingLeft="10sp"/>
+            </TableRow>
+            <TableRow android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:src="@drawable/ic_error_black_24dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Game Over "
+                    android:textSize="18sp"
+                    android:paddingLeft="10sp"/>
+            </TableRow>
+            <TableRow android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical">
+                <Button android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/start"
+                    android:text="Start"
+
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Developed By : Ramesh Pokhrel"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/r1"/>
+
+</RelativeLayout>
